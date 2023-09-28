@@ -1,0 +1,793 @@
+/* ----- fonts css part start ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ----- fonts css part end ----- */
+/* ----- basic css part start ----- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/* ----- basic css part end ----- */
+/* ----- nav css part start ----- */
+#navber {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+}
+
+.nav_manu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 90px;
+}
+
+.nav_logo {
+    width: 188px;
+}
+
+.nav_items ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav_items ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #07294D;
+}
+
+.nav_items ul li a span {
+    color: #377DFF;
+}
+
+.nav_items ul li a:hover {
+    color: #377DFF;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #377DFF;
+    display: none;
+    cursor: pointer;
+}
+
+/* ----- nav css part end ----- */
+/* ----- banner css part start ----- */
+#banner {
+    background: url(../images/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::before {
+    content: "";
+    background-color: rgba(241, 241, 241, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_text {
+    width: 490px;
+}
+
+.banner_text h2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #377DFF;
+    margin-bottom: 20px;
+}
+
+.banner_text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.banner_text p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #4B5158;
+    margin-bottom: 40px;
+}
+
+.common_button {
+    width: 155px;
+    height: 55px;
+    border-radius: 5px;
+    background: #377DFF;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    line-height: 55px;
+    text-align: center;
+    transition: all linear .4s;
+}
+
+.common_button:hover {
+    background: #07294D;
+}
+
+.banner_image img {
+    width: 556px;
+}
+
+/* ----- banner css part end ----- */
+/* ----- counter css part start ----- */
+#counter {
+    padding: 71px 0;
+    background: url(../images/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.counter_col h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.counter_row {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.counter_col p {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* ----- counter css part end ----- */
+/* ----- categories css part start ----- */
+#categories {
+    padding: 100px 0;
+}
+
+.common_title h3 {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #377DFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.common_title h2 {
+    font-size: 34px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.categories_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories_card {
+    width: 262px;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.categories_card:hover .card_text h2 {
+    color: #377DFF;
+}
+
+.crad_image img {
+    border-radius: 7%;
+}
+
+.card_text {
+    padding: 25px;
+    text-align: center;
+}
+
+.card_text h2 {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+    transition: all linear .4s;
+}
+
+.card_text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #61686E;
+}
+
+#categories .categories_button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.categories_button .common_button {
+    width: 256px;
+}
+
+/* ----- categories css part end ----- */
+/* ----- courses css part start ----- */
+
+
+
+/* ----- courses css part end ----- */
+/* ----- courses css part start ----- */
+#courses {
+    padding: 100px 0;
+    background: #F5F5F5;
+}
+
+.courses_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.courses_card {
+    width: 362px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.card_image a img {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card_body_text {
+    padding: 40px 30px;
+}
+
+.card_piece p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #377DFF;
+}
+
+.card_review {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.review_icon i {
+    font-size: 17px;
+    color: #ff9900;
+}
+
+.review_text p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #4B5158;
+}
+
+.card_title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #07294D;
+}
+
+.card_line {
+    width: 100%;
+    height: 1px;
+    background: #d9dbdd;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card_time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clock_icon p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #41454F;
+}
+
+.pepole_icon p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #41454F;
+}
+
+/* ----- courses css part end ----- */
+/* ----- testimonial css part start ----- */
+#testimonial {
+    padding: 100px 0;
+}
+
+.testimonial_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial_card {
+    width: 362px;
+    padding: 50px 40px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial_card .quote i {
+    font-size: 40px;
+    color: #377DFF;
+    margin-bottom: 10px;
+}
+
+.testimonial_card_text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #232643;
+    margin-bottom: 15px;
+}
+
+.testimonial_card_text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #4B5158;
+    margin-bottom: 15px;
+}
+
+.testimonial_review i {
+    font-size: 16px;
+    color: #ff9900;
+    margin-bottom: 25px;
+}
+
+.testimonial_image img {
+    width: 75px;
+    border-radius: 50%;
+    border: 5px solid rgb(79 173 235 / 61%);
+}
+
+/* ----- testimonial css part end ----- */
+/* ----- discount css part start ----- */
+#discount {
+    background: url(../images/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.discount_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount_text {
+    width: 528px;
+}
+
+.discount_text p {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #EAECFF;
+    margin-bottom: 35px;
+}
+
+.discount_text h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.discount_text .common_button {
+    width: 170px;
+    background: #fff;
+    color: #377DFF;
+    transition: all linear .4s;
+}
+
+.discount_text .common_button:hover {
+    background: #07294D;
+    color: #fff;
+}
+
+.discount_image img {
+    width: 100%;
+}
+
+/* ----- discount css part end ----- */
+/* ----- instructor css part start ----- */
+#instructor {
+    padding: 100px 0;
+}
+
+.instructor_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructor_card {
+    width: 260px;
+    background: #F5F5F5;
+}
+
+.instructor_image {
+    width: 100%;
+    height: 258px;
+    position: relative;
+}
+
+.instructor_image:hover .img_icons {
+    opacity: 100%;
+}
+
+.img_icons {
+    width: 100%;
+    height: 258px;
+    padding: 0 40px;
+    background: rgba(80, 82, 206, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .5s;
+}
+
+.img_icons a i {
+    color: #377DFF;
+    font-size: 15px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: all linear .4s;
+}
+
+.img_icons a i:hover {
+    background: #07294D;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.instructor_text {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.instructor_text a {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.instructor_text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #242C5E;
+}
+
+/* ----- instructor css part end ----- */
+/* ----- footer css part start ----- */
+#footer_part {
+    padding-top: 55px;
+    background: #021d3a;
+}
+
+.footer_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 66px;
+}
+
+.footer_col .footer_logo img {
+    width: 190px;
+}
+
+.footer_logo p {
+    width: 237px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #DEDEDE;
+    margin-top: 30px;
+}
+
+.footer_list_head h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer_list_link ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #DEDEDE;
+    margin-bottom: 20px;
+    transition: all linear .4s;
+}
+
+.footer_list_link ul li a span {
+    margin-right: 4px;
+}
+
+.footer_list_link ul li a:hover {
+    color: #377DFF;
+}
+
+.resent_post {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.resent_post .post_image img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.resent_post .post_title h2 {
+    width: 174px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+    color: #DEDEDE;
+}
+
+.resent_post .post_title p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.copyright_text {
+    height: 60px;
+    background: #05274B;
+}
+
+.copyright_text p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* ----- footer css part end ----- */
+/* ------ responsive  part stsrt ------ */
+@media (max-width:992px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .nav_items {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: #07294D;
+        z-index: 2;
+        display: none;
+    }
+
+    .nav_items ul {
+        display: block;
+    }
+
+    .nav_items ul li {
+        margin: 10px 0;
+    }
+
+    .nav_items ul li a {
+        display: block;
+        color: #fff;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .banner_row {
+        display: block;
+    }
+
+    .banner_text {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .banner_text h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .banner_text p {
+        font-size: 14px;
+    }
+
+    .banner_image img {
+        width: 100%;
+    }
+
+    .counter_row {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .common_title h2 {
+        font-size: 26px;
+    }
+
+    .categories_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .categories_card {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .courses_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .courses_card {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .testimonial_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .testimonial_card {
+        width: 100%;
+    }
+
+    .discount_row {
+        display: block;
+        text-align: center;
+    }
+
+    .discount_text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .discount_text h2 {
+        font-size: 30px;
+    }
+
+    .instructor_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .instructor_card {
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .footer_row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer_col {
+        margin: 0 auto;
+    }
+
+    .copyright_text p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+/* ------ responsive  part end ------ */
